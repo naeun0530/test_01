@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset */
+* {margin: 0; padding: 0;}
+li {list-style-type: none;}
+a {text-decoration: none; color: inherit;}
+body {font-family: 'Pretendard-Regular', 'Noto Sans KR', sans-serif;}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 1600px;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+#naeun .inner {
+text-align: center;
+align-items: center;
+width: 360px;
+height: 580px;
+
+}
+.Price {
+  font-size: 14px;
+}
+h2 {
+  font-size: 16px;
+  padding: 10px;
+}
+.red {
+  color: red;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+
+#naeun .inner .img {
+  width: 300px;
+  padding: 30px;
+}
+
+
+/* BUTTON */
+.Button1, .Button2, .Button3,.Button4 ,.Button5 ,.Button6,
+.Button7 ,.Button8 ,.Button9 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+#naeun .inner .Button1 {
+  background-color: #7D8C7D;
+}
+#naeun .inner .Button2 {
+  background-color: #F2AD85;
+}
+#naeun .inner .Button3 {
+  background-color: #A7C1D9;
+}
+#naeun .inner .Button4 {
+  background-color: #A65198;
+}
+#naeun .inner .Button5 {
+  background-color: #F2B035;
+}
+#naeun .inner .Button6 {
+  background-color: #736A68;
+}
+.Button10,.Button11,.Button12 ,
+.Button13,.Button14,.Button15 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+#naeun .inner .Button7 {
+  background-color: #734656;
+}
+#naeun .inner .Button8 {
+  background-color: #8C6E5D;
+}
+#naeun .inner .Button9 {
+  background-color: #364F59;
+}
+#naeun .inner .Button10 {
+  background-color: #BFBFBF;
+}
+#naeun .inner .Button11 {
+  background-color: #404040;
+}
+#naeun .inner .Button12 {
+  background-color: #8565A6;
+}
+#naeun .inner .Button13 {
+  background-color: #8C8A68;
+}
+#naeun .inner .Button14 {
+  background-color: #D9C3C1;
+}
+#naeun .inner .Button15 {
+  background-color: #465973;
+}
+
