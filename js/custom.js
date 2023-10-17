@@ -1,15 +1,25 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+var swiper1 = new Swiper(".mySwiper.practice-style", {
   spaceBetween: 10,
+  slidesPerView: 5,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
 });
 
-// 이미지 그룹 1에 대한 숨김 함수와 이벤트 핸들러 등록 코드
+var swiper2 = new Swiper(".mySwiper.flip-style", {
+  effect: "flip",
+  grabCursor: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 const imageContainers1 = document.getElementById("imageContainers1");
-const buttons1 = document.querySelectorAll(".Button1, .Button2, .Button3"); // 수정: 클래스 선택자 수정
+const buttons1 = document.querySelectorAll(".Button1, .Button2, .Button3");
 
 function hideAllImages1() {
   imageContainers1.querySelectorAll("img").forEach((image) => {
@@ -25,15 +35,14 @@ firstImage1.style.display = "block";
 buttons1.forEach((button) => {
   button.addEventListener("click", () => {
     hideAllImages1();
-    const imageId = button.getAttribute("data-image"); // 수정: data-image 속성 사용
+    const imageId = button.getAttribute("data-image");
     const targetImage = document.getElementById(imageId);
     targetImage.style.display = "block";
   });
 });
 
-// 이미지 그룹 2에 대한 숨김 함수와 이벤트 핸들러 등록 코드
 const imageContainers2 = document.getElementById("imageContainers2");
-const buttons2 = document.querySelectorAll(".Button4, .Button5, .Button6"); // 수정: 클래스 선택자 수정
+const buttons2 = document.querySelectorAll(".Button4, .Button5, .Button6");
 
 function hideAllImages2() {
   imageContainers2.querySelectorAll("img").forEach((image) => {
@@ -49,13 +58,11 @@ firstImage2.style.display = "block";
 buttons2.forEach((button) => {
   button.addEventListener("click", () => {
     hideAllImages2();
-    const imageId = button.getAttribute("data-image2"); // 수정: data-image2 속성 사용
+    const imageId = button.getAttribute("data-image2");
     const targetImage = document.getElementById(imageId);
     targetImage.style.display = "block";
   });
 });
-
-
 
 const imageContainers3 = document.getElementById("imageContainers3");
 const buttons3 = document.querySelectorAll(".Button7, .Button8, .Button9");
@@ -120,6 +127,28 @@ buttons5.forEach((button) => {
   button.addEventListener("click", () => {
     hideAllImages5();
     const imageId = button.getAttribute("data-image5");
+    const targetImage = document.getElementById(imageId);
+    targetImage.style.display = "block";
+  });
+});
+const imageContainers01 = document.getElementById("imageContainers01");
+const buttons01 = document.querySelectorAll(".Button01, .Button02, .Button03");
+
+function hideAllImages01() {
+  imageContainers01.querySelectorAll("img").forEach((image) => {
+    image.style.display = "none";
+  });
+}
+
+hideAllImages01();
+
+const firstImage01 = document.getElementById("image01");
+firstImage01.style.display = "block";
+
+buttons01.forEach((button) => {
+  button.addEventListener("click", () => {
+    hideAllImages01();
+    const imageId = button.getAttribute("data-image");
     const targetImage = document.getElementById(imageId);
     targetImage.style.display = "block";
   });
