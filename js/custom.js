@@ -1,6 +1,7 @@
 var swiper1 = new Swiper(".mySwiper.practice-style", {
   spaceBetween: 10,
   slidesPerView: 5,
+  centeredSlides: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -18,6 +19,8 @@ var swiper2 = new Swiper(".mySwiper.flip-style", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
 const imageContainers1 = document.getElementById("imageContainers1");
 const buttons1 = document.querySelectorAll(".Button1, .Button2, .Button3");
 
